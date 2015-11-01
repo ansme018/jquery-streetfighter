@@ -27,9 +27,42 @@ $('.ryu').mouseenter(function() {
   	$('.ryu-ready').show();
   });
 
+$(document).keydown(function (event) {
+        if (event.keyCode == 88) {
+        	console.log('working');
+            $('.ryu-still').hide();
+            $('ryu-ready').hide();
+            $('.ryu-cool').show();
+        }
+    })
+    
+    .keyup(function (event) {
+        if (event.keyCode == 88) {
+            $('.ryu-still').show();
+            $('.ryu-cool').hide();
+        };
+    })
+
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
+
+  
 });
+
+
+//*.keydown(function(){
+//	if (event.which ==88){
+//		$('.ryu-still').hide();
+//		$('.ryu-cool').show();
+//	})
+//} 
+//press 'x' key. 
+//Hide ryu-still
+//show ryu-cool
+//let go of 'x' key
+//Hide ruy-cool
+//Show ryu-still
+//});
