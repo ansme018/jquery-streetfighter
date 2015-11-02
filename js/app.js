@@ -51,18 +51,3 @@ function playHadouken () {
 
   
 });
-
-
-//*.keydown(function(){
-//	if (event.which ==88){
-//		$('.ryu-still').hide();
-//		$('.ryu-cool').show();
-//	})
-//} 
-//press 'x' key. 
-//Hide ryu-still
-//show ryu-cool
-//let go of 'x' key
-//Hide ruy-cool
-//Show ryu-still
-//});
